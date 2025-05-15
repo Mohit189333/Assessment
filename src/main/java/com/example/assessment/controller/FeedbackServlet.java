@@ -27,7 +27,7 @@ public class FeedbackServlet extends HttpServlet {
         Feedback feedback = new Feedback(name, email, course, rating, comments);
         feedbackList.add(feedback);
 
-        response.getWriter().println("<html><body><h3>Feedback Submitted Successfully!</h3><a href='feedback.jsp'>Submit Another</a><br><a href='AdminLoginPage.jsp'>View Feedbacks</a></body></html>");
+        response.getWriter().println("<html><body><h3>Feedback Submitted Successfully!</h3><a href='Feedback.jsp'>Submit Another</a><br><a href='AdminLoginPage.jsp'>View Feedbacks</a></body></html>");
     }
 
     public static List<Feedback> getFeedbackList() {
